@@ -20,26 +20,26 @@ namespace _2._4
                             if (stack.Count == 0)
                             {
 
-                                Console.WriteLine("Лишняя закр скобка ')'");
+                                Console.WriteLine("Лишняя закрывающая скобка ')'");
                                 a +=  1;
                             }
                             else if (stack.Pop() != '(')
                             {
-                                Console.WriteLine("Лишняя закр скобка ')'");
+                                Console.WriteLine("Лишняя закрывающая скобка ')'");
                                 a +=  1;
                             }  
                             break;
                         case '}':
                             if (stack.Pop() != '{')
                             {
-                                Console.WriteLine("Лишняя закр скобка '} '");
+                                Console.WriteLine("Лишняя закрывающая скобка '} '");
                                 a += 1;
                             }   
                             break;
                         case ']':
                             if (stack.Pop() != '[') 
                             {
-                                Console.WriteLine("Лишняя закр скобка ']'");
+                                Console.WriteLine("Лишняя закрывающая скобка ']'");
                                 a +=  1;
                             }
                             break;
@@ -59,7 +59,7 @@ namespace _2._4
                 }
                 else
                 {
-                    Console.WriteLine("Ошибок нету");
+                    Console.WriteLine("Ошибок нет");
                 }
                 stack.Clear();
             }
